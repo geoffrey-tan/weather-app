@@ -15,8 +15,15 @@
     "lint": "npm run typecheck && npm run lint:es && npm run lint:format",
     "lint:es": "eslint --fix .",
     "lint:format": "prettier --write --loglevel warn . '!**/package-lock.json' '!functions/**/*'",
+    "postupdate": "npm run update:browserslist && npm audit fix",
     "serve": "gatsby serve -o",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "update": "npx npm-check-updates --target minor --interactive && npm i",
+    "update:browserslist": "npx browserslist@latest --update-db",
+    "update:check": "npx npm-check-updates --deprecated",
+    "update:latest": "npx npm-check-updates --interactive && npm i",
+    "update:latest:clean": "rm -rf $(pwd)/node_modules/; rm $(pwd)/package-lock.json; npx npm-check-updates --interactive && npm i",
+    "update:noinstall": "npx npm-check-updates --target minor --interactive"
   },
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "2.0.4",
@@ -35,15 +42,15 @@
     "gatsby-plugin-sitemap": "5.13.0",
     "gatsby-source-filesystem": "4.13.0",
     "gatsby-transformer-sharp": "4.13.0",
-    "react": "17.0.1",
+    "react": "17.0.2",
     "react-chartjs-2": "4.1.0",
-    "react-dom": "17.0.1",
+    "react-dom": "17.0.2",
     "react-helmet": "6.1.0"
   },
   "devDependencies": {
     "@types/node": "17.0.31",
-    "@types/react": "17.0.44",
-    "@types/react-dom": "17.0.16",
+    "@types/react": "18.0.9",
+    "@types/react-dom": "18.0.3",
     "@typescript-eslint/eslint-plugin": "5.23.0",
     "@typescript-eslint/parser": "5.23.0",
     "commitizen": "4.2.4",
