@@ -1,26 +1,26 @@
-import * as React from "react";
-import { Line, ChartProps } from "react-chartjs-2";
-import { Chart as ChartJS, registerables } from "chart.js";
-import ChartDataLabels from "chartjs-plugin-datalabels";
-import styled from "@emotion/styled";
-import img from "../images/sunrise-illustration-wallpaper-2560x1080_14.jpg";
+import * as React from 'react'
+import { Line, ChartProps } from 'react-chartjs-2'
+import { Chart as ChartJS, registerables } from 'chart.js'
+import ChartDataLabels from 'chartjs-plugin-datalabels'
+import styled from '@emotion/styled'
+import img from '../images/sunrise-illustration-wallpaper-2560x1080_14.jpg'
 
-ChartJS.register(...registerables, ChartDataLabels);
+ChartJS.register(...registerables, ChartDataLabels)
 
-const data: ChartProps<"line">["data"] = {
+const data: ChartProps<'line'>['data'] = {
   labels: [15, 21, 18, 24, 26, 19, 17, 20, 15, 0],
   datasets: [
     {
       // label: "My First dataset",
-      backgroundColor: "#fff",
-      borderColor: "#fff",
+      backgroundColor: '#fff',
+      borderColor: '#fff',
       fill: true,
       data: [15, 21, 18, 24, 26, 19, 17, 20, 15, 12],
     },
   ],
-};
+}
 
-const options: ChartProps<"line">["options"] = {
+const options: ChartProps<'line'>['options'] = {
   layout: {
     autoPadding: false,
     padding: 0,
@@ -54,40 +54,40 @@ const options: ChartProps<"line">["options"] = {
       display: false,
     },
     datalabels: {
-      anchor: "end",
-      align: "end",
-      color: "#fff",
+      anchor: 'end',
+      align: 'end',
+      color: '#fff',
       font: {
-        weight: "bold",
+        weight: 'bold',
       },
     },
   },
-};
+}
 
 const Container = styled.main`
-  font-family: "-apple-system, Roboto, sans-serif, serif";
+  font-family: '-apple-system, Roboto, sans-serif, serif';
   color: #fff;
   background: url(${img});
   background-size: cover;
   background-attachment: fixed;
   background-position: top;
-`;
+`
 
 const ChartContainer = styled.div`
   padding-top: 75vh;
-`;
+`
 
 const Content = styled.div`
   background: #fff;
   min-height: 50vh;
-`;
+`
 
 const WeatherNow = styled.div`
   position: fixed;
   padding: 1em;
-`;
+`
 
-const IndexPage = () => {
+function IndexPage() {
   return (
     <Container>
       <WeatherNow>24C</WeatherNow>
@@ -96,7 +96,7 @@ const IndexPage = () => {
       </ChartContainer>
       <Content>Content</Content>
     </Container>
-  );
-};
+  )
+}
 
-export default IndexPage;
+export default IndexPage

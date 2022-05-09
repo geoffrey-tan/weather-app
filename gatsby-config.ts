@@ -1,34 +1,35 @@
-import type { GatsbyConfig } from "gatsby";
+import type { GatsbyConfig } from 'gatsby'
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `weather-app`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: 'weather-app',
+    siteUrl: 'https://www.yourdomain.tld',
   },
   plugins: [
-    "gatsby-plugin-emotion",
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: "src/images/icon.png",
+        icon: 'src/images/icon.png',
       },
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './src/images/',
       },
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
-      __key: "images",
+      __key: 'images',
     },
     {
-      resolve: "@chakra-ui/gatsby-plugin",
+      resolve: '@chakra-ui/gatsby-plugin',
       options: {
         /**
          * @property {boolean} [resetCSS=true]
@@ -43,6 +44,6 @@ const config: GatsbyConfig = {
       },
     },
   ],
-};
+}
 
-export default config;
+export default config
