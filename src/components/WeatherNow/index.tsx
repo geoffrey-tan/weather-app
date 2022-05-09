@@ -1,5 +1,4 @@
 import styled from '@emotion/styled'
-import * as React from 'react'
 
 const Container = styled.div`
   position: fixed;

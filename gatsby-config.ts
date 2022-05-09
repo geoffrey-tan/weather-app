@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { config } from 'dotenv'
 import type { GatsbyConfig } from 'gatsby'
 
@@ -30,7 +29,6 @@ const gatsbyConfig: GatsbyConfig = {
         name: 'images',
         path: './src/images/',
       },
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       __key: 'images',
     },

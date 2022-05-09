@@ -1,5 +1,4 @@
 import styled from '@emotion/styled'
-import * as React from 'react'
 
 import Chart from '../components/Chart'
 import WeatherNow from '../components/WeatherNow'

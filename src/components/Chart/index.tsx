@@ -1,6 +1,5 @@
 import { Chart as ChartJS, registerables } from 'chart.js'
 import ChartDataLabels from 'chartjs-plugin-datalabels'
-import * as React from 'react'
 import { ChartProps, Line } from 'react-chartjs-2'
 
 ChartJS.register(...registerables, ChartDataLabels)

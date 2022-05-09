@@ -4,7 +4,12 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'airbnb/hooks'],
+  extends: [
+    'plugin:eslint-comments/recommended',
+    'plugin:react/recommended',
+    'airbnb',
+    'airbnb/hooks',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -21,13 +26,23 @@ module.exports = {
       parserOptions: {
         project: './tsconfig.json',
       },
+      rules: {
+        '@typescript-eslint/ban-ts-comment': 'off',
+      },
+    },
+    {
+      files: '**/gatsby-*.+(js|ts)',
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+      },
     },
     {
       files: ['**/*'],
-      extends: ['prettier'],
+      extends: ['plugin:react/jsx-runtime', 'prettier'],
     },
   ],
   rules: {
+    'eslint-comments/no-unused-disable': 'error',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
   },
