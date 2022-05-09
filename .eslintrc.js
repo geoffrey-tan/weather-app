@@ -33,7 +33,10 @@ module.exports = {
     {
       files: '**/gatsby-*.+(js|ts)',
       rules: {
+        'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
+        'import/prefer-default-export': 'off',
+        'react/jsx-filename-extension': 'off',
       },
     },
     {
@@ -45,5 +48,12 @@ module.exports = {
     'eslint-comments/no-unused-disable': 'error',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
 }
