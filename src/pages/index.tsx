@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 
+import SEO from '../common/Seo'
 import Chart from '../components/Chart'
 import WeatherNow from '../components/WeatherNow'
 import img from '../images/sunrise-illustration-wallpaper-2560x1080_14.jpg'
@@ -25,6 +26,7 @@ const Content = styled.div`
 function IndexPage() {
   return (
     <Container>
+      <SEO title="Weather App" index={false} />
       <WeatherNow />
       <ChartContainer>
         <Chart />

@@ -7,8 +7,14 @@ config({
 
 const gatsbyConfig: GatsbyConfig = {
   siteMetadata: {
-    title: 'weather-app',
-    siteUrl: 'https://www.yourdomain.tld',
+    name: 'Geoffrey Tan',
+    title: 'Geoffrey Tan · React Developer',
+    titleTemplate: '%s | Geoffrey Tan · React Developer',
+    siteUrl: 'https://weather.geoffreytan.dev',
+    image: '/icon.png',
+    description:
+      "Geoffrey's Portfolio website. React Front-End Developer, based in the Netherlands.",
+    email: 'contact@geoffreytan.dev',
   },
   plugins: [
     'gatsby-plugin-emotion',
