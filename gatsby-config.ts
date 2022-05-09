@@ -17,18 +17,12 @@ const gatsbyConfig: GatsbyConfig = {
     email: 'contact@geoffreytan.dev',
   },
   plugins: [
-    'gatsby-plugin-emotion',
-    'gatsby-plugin-image',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'src/images/icon.png',
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -38,19 +32,18 @@ const gatsbyConfig: GatsbyConfig = {
       // @ts-ignore
       __key: 'images',
     },
+    '@chakra-ui/gatsby-plugin',
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-sitemap',
+    'gatsby-transformer-sharp',
+    /** Post plugins */
     {
-      resolve: '@chakra-ui/gatsby-plugin',
+      resolve: 'gatsby-plugin-zopfli',
       options: {
-        /**
-         * @property {boolean} [resetCSS=true]
-         * if false, this plugin will not use `<CSSReset />
-         */
-        resetCSS: true,
-        /**
-         * @property {boolean} [isUsingColorMode=true]
-         * if false, this plugin will not use <ColorModeProvider />
-         */
-        isUsingColorMode: false,
+        extensions: ['txt', 'css', 'html', 'xml', 'js', 'json', 'svg'],
       },
     },
   ],
