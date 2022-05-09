@@ -1,6 +1,12 @@
+/* eslint-disable import/no-extraneous-dependencies */
+import { config } from 'dotenv'
 import type { GatsbyConfig } from 'gatsby'
 
-const config: GatsbyConfig = {
+config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+const gatsbyConfig: GatsbyConfig = {
   siteMetadata: {
     title: 'weather-app',
     siteUrl: 'https://www.yourdomain.tld',
@@ -46,4 +52,4 @@ const config: GatsbyConfig = {
   ],
 }
 
-export default config
+export default gatsbyConfig

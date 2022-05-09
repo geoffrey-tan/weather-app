@@ -27,5 +27,8 @@ module.exports = {
       extends: ['prettier'],
     },
   ],
-  rules: {},
+  rules: {
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+  },
 }

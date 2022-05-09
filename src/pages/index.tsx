@@ -1,8 +1,9 @@
-import * as React from 'react'
-import { Line, ChartProps } from 'react-chartjs-2'
+import styled from '@emotion/styled'
 import { Chart as ChartJS, registerables } from 'chart.js'
 import ChartDataLabels from 'chartjs-plugin-datalabels'
-import styled from '@emotion/styled'
+import * as React from 'react'
+import { ChartProps, Line } from 'react-chartjs-2'
+
 import img from '../images/sunrise-illustration-wallpaper-2560x1080_14.jpg'
 
 ChartJS.register(...registerables, ChartDataLabels)
