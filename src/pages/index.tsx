@@ -3,15 +3,12 @@ import styled from '@emotion/styled'
 import SEO from '../common/Seo'
 import Chart from '../components/Chart'
 import WeatherNow from '../components/WeatherNow'
-import img from '../images/sunrise-illustration-wallpaper-2560x1080_14.jpg'
+import backgroundChina from '../images/backgrounds/china.jpg'
 
 const Container = styled.main`
-  font-family: '-apple-system, Roboto, sans-serif, serif';
   color: #fff;
-  background: url(${img});
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: top;
+  background: url(${backgroundChina});
+  background-size: contain;
 `
 
 const ChartContainer = styled.div`
