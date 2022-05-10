@@ -1,0 +1,27 @@
+# See: https://circleci.com/docs/2.0/configuration-reference
+version: 2.1
+
+orbs:
+  node: circleci/node@5.0
+
+jobs:
+  lint:
+    executor:
+      name: node/default
+      tag: 'lts'
+    steps:
+      - checkout
+      - node/install-packages
+      - run:
+          command: npm run lint
+      # - run:
+      #     command: npm run build
+
+workflows:
+  lint:
+    jobs:
+      - lint:
+          filters:
+            branches:
+              only:
+                - develop
