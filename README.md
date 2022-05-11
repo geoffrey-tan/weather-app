@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/geoffrey-tan/weather-app/tree/develop.svg?style=shield)](https://circleci.com/gh/geoffrey-tan/weather-app/tree/develop)
 
-Weather App. Work In Progress.
+Weather App (Work In Progress). Build with Gatsby + Gatsby Serverless Functions.
 
 _Design by Paule Anne [LINK](https://dribbble.com/shots/6813249-Weather-App-ui-illustration)._
 
