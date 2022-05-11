@@ -5,6 +5,12 @@
  */
 
 import RemoveDevtools from './src/common/RemoveDevtools'
+import App from './src/components/App'
+
+/** @type {import('gatsby').GatsbySSR['wrapPageElement']} */
+export const wrapPageElement = ({ element, props }) => (
+  <App {...props}>{element}</App>
+)
 
 /** @type {import('gatsby').GatsbySSR['onRenderBody']} */
 export const onRenderBody = ({ setHeadComponents }) => {

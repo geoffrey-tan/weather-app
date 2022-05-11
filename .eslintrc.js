@@ -46,8 +46,9 @@ module.exports = {
   ],
   rules: {
     'eslint-comments/no-unused-disable': 'error',
-    'simple-import-sort/imports': 'error',
+    'react/jsx-props-no-spreading': 'off',
     'simple-import-sort/exports': 'error',
+    'simple-import-sort/imports': 'error',
   },
   settings: {
     'import/resolver': {
