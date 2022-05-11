@@ -1,4 +1,9 @@
+import { config } from 'dotenv'
 import type { GatsbyConfig } from 'gatsby'
+
+config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 const gatsbyConfig: GatsbyConfig = {
   siteMetadata: {
