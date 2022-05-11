@@ -47,6 +47,7 @@ const gatsbyConfig: GatsbyConfig = {
       },
     },
   ],
+  jsxRuntime: 'automatic', // react v17
 }
 
 export default gatsbyConfig
