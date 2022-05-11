@@ -1,15 +1,14 @@
-import styled from '@emotion/styled'
+import { Box, BoxProps } from '@chakra-ui/react'
 
 import Chart from './Chart'
 
-const ChartContainer = styled.div`
-  padding-top: 75vh;
-`
+function ChartContainer(props: BoxProps) {
+  return <Box paddingTop="75vh" {...props} />
+}
 
-const Content = styled.div`
-  background: #fff;
-  min-height: 50vh;
-`
+function Content(props: BoxProps) {
+  return <Box bg="#fff" minH="50vh" {...props} />
+}
 
 function Tab() {
   return (

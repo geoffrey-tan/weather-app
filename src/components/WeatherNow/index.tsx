@@ -1,34 +1,46 @@
-import { Box, HStack, SimpleGrid, Text, VStack } from '@chakra-ui/react'
-import styled from '@emotion/styled'
+import {
+  Box,
+  BoxProps,
+  HStack,
+  SimpleGrid,
+  SimpleGridProps,
+  StackProps,
+  Text,
+  VStack,
+} from '@chakra-ui/react'
 import { BiMoon } from 'react-icons/bi'
 
-const Container = styled(SimpleGrid)`
-  position: fixed;
-  padding: 2.5em;
-  width: 100%;
-`
+function Container(props: SimpleGridProps) {
+  return <SimpleGrid paddingTop="75vh" p="2.5em" w="100%" {...props} />
+}
+
+function NumberDisplay(props: BoxProps) {
+  return <Box lineHeight="normal" fontSize={48} {...props} />
+}
+
+function WeatherDisplay(props: StackProps) {
+  return <VStack alignItems="end" justifyContent="end" {...props} />
+}
 
 function WeatherNow() {
   return (
     <Container columns={2}>
-      <div>
-        <div>Yanshuo, China</div>
+      <Box>
+        <Box>Yanshuo, China</Box>
         <HStack>
-          <Box lineHeight="normal" fontSize={48}>
-            24
-          </Box>
+          <NumberDisplay>24</NumberDisplay>
           <HStack>
-            <div>°C</div>
-            <div>|</div>
-            <div>°F</div>
+            <Box>°C</Box>
+            <Box>|</Box>
+            <Box>°F</Box>
           </HStack>
         </HStack>
-      </div>
+      </Box>
 
-      <VStack alignItems="end" justifyContent="end">
+      <WeatherDisplay>
         <BiMoon size={24} />
         <Text>Clear</Text>
-      </VStack>
+      </WeatherDisplay>
     </Container>
   )
 }

@@ -1,23 +1,19 @@
-import styled from '@emotion/styled'
+import { Heading } from '@chakra-ui/react'
 
 import SEO from '../common/Seo'
 import Tab from '../components/Tab'
 import WeatherNow from '../components/WeatherNow'
-import backgroundChina from '../images/backgrounds/china.jpg'
-
-const Container = styled.div`
-  color: #fff;
-  background: url(${backgroundChina});
-  background-size: contain;
-`
 
 function IndexPage() {
   return (
-    <Container>
+    <>
       <SEO title="Weather App" index={false} />
+      <Heading as="h1" display="none">
+        Weather App
+      </Heading>
       <WeatherNow />
       <Tab />
-    </Container>
+    </>
   )
 }
 

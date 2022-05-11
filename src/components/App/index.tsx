@@ -1,14 +1,25 @@
-import { Box } from '@chakra-ui/react'
+import { Box, BoxProps } from '@chakra-ui/react'
+import { PageProps } from 'gatsby'
 
-type AppProps = {
-  children: React.ReactNode
+import backgroundChina from '../../images/backgrounds/china.jpg'
+
+function Main(props: BoxProps) {
+  return (
+    <Box
+      as="main"
+      color="#fff"
+      bg={`url(${backgroundChina})`}
+      backgroundSize="contain"
+      {...props}
+    />
+  )
 }
 
-function App(props: AppProps) {
+function App({ children }: PageProps) {
   return (
     /** @issue see react-helmet */
     // <React.StrictMode>
-    <Box as="main" {...props} />
+    <Main>{children}</Main>
     // </React.StrictMode>
   )
 }
