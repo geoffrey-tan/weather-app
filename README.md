@@ -1,6 +1,9 @@
-# Weather App ([weather.geoffreytan.dev](https://weather.geoffreytan.dev/)) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](./LICENSE) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+# Weather App (WIP) ([weather.geoffreytan.dev](https://weather.geoffreytan.dev/)) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](./LICENSE) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-Weather App.
+Weather App. Work In Progress.
+
+Design by Paule Anne.
+https://dribbble.com/shots/6813249-Weather-App-ui-illustration
 
 ## :star: Quick Start
 
