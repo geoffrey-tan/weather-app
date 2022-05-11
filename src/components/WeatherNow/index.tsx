@@ -11,7 +11,15 @@ import {
 import { BiMoon } from 'react-icons/bi'
 
 function Container(props: SimpleGridProps) {
-  return <SimpleGrid paddingTop="75vh" p="2.5em" w="100%" {...props} />
+  return (
+    <SimpleGrid
+      position="fixed"
+      paddingTop="75vh"
+      p="2.5em"
+      w="100%"
+      {...props}
+    />
+  )
 }
 
 function NumberDisplay(props: BoxProps) {
