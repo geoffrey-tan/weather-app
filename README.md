@@ -1,5 +1,7 @@
 # Weather App (WIP) ([weather.geoffreytan.dev](https://weather.geoffreytan.dev/)) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](./LICENSE) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
+[![CircleCI](https://circleci.com/gh/geoffrey-tan/weather-app/tree/develop.svg?style=shield)](https://circleci.com/gh/geoffrey-tan/weather-app/tree/develop)
+
 Weather App. Work In Progress.
 
 Design by Paule Anne.
