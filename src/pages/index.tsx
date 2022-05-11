@@ -5,7 +5,7 @@ import Chart from '../components/Chart'
 import WeatherNow from '../components/WeatherNow'
 import backgroundChina from '../images/backgrounds/china.jpg'
 
-const Container = styled.main`
+const Container = styled.div`
   color: #fff;
   background: url(${backgroundChina});
   background-size: contain;
