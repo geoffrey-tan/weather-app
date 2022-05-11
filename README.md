@@ -4,8 +4,7 @@
 
 Weather App. Work In Progress.
 
-Design by Paule Anne.
-https://dribbble.com/shots/6813249-Weather-App-ui-illustration
+_Design by Paule Anne [LINK](https://dribbble.com/shots/6813249-Weather-App-ui-illustration)._
 
 ## :star: Quick Start
 
