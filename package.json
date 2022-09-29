@@ -39,7 +39,7 @@
     "@emotion/styled": "11.8.1",
     "chart.js": "3.7.1",
     "chartjs-plugin-datalabels": "2.0.0",
-    "framer-motion": "6.3.3",
+    "framer-motion": "7.5.0",
     "gatsby": "4.14.0",
     "gatsby-plugin-emotion": "7.14.0",
     "gatsby-plugin-image": "2.14.0",
